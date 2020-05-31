@@ -40,15 +40,7 @@ export const PageLayout: React.FC<Props> = ({ title, children }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Main>{children}</Main>
-      <Footer>
-        <a
-          href="https://zeit.co?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by <img src="/zeit.svg" alt="ZEIT Logo" />
-        </a>
-      </Footer>
+      <Footer>Created by Louisa Spicer</Footer>
     </Container>
   );
 };
