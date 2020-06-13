@@ -8,7 +8,8 @@ export const theme = {
     xl: "40px"
   },
   typography: {
-    fontFamily: "BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+    fontFamily:
+      "Noto Sans SC, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Ubuntu, Helvetica Neue, sans-serif",
     size: {
       xs: "0.75rem",
       s: "0.875rem",

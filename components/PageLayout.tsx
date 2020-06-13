@@ -3,23 +3,24 @@ import Link from "next/link";
 
 import styled from "@emotion/styled";
 import withMargin from "../styled/withMargin";
-import { Heading } from "./Heading";
+import { theme } from "../styled/theme";
 
 const Container = styled.div`
   min-height: 100vh;
-  padding: 0 0.5rem;
+  padding: ${theme.spacing.m};
+
   display: flex;
   flex-direction: column;
   background-image: linear-gradient(
     160deg,
-    #c9d3dc 20%,
+    #ffc15e 20%,
     #f4f4f4 calc(20% + 1px)
   );
 
   @media screen and (min-width: 1100px) {
     background-image: linear-gradient(
       160deg,
-      #c9d3dc 25%,
+      #ffc15e 25%,
       #f4f4f4 calc(25% + 1px)
     );
   }
@@ -81,8 +82,6 @@ export const PageLayout: React.FC<Props> = ({ title, children }) => {
     <Container>
       <Head>
         <title>Louisa | {title}</title>
-        <meta name="title" content="Louisa Spicer: Software Engineer" />
-        <meta name="description" content="Portfolio website" />
       </Head>
       <Header>
         <ProfileImg
@@ -98,8 +97,8 @@ export const PageLayout: React.FC<Props> = ({ title, children }) => {
               </Link>
             </LinkItem>
             <LinkItem>
-              <Link href="/projects">
-                <a>Projects</a>
+              <Link href="/art">
+                <a>Art</a>
               </Link>
             </LinkItem>
           </Links>
